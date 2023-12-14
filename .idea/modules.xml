@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProgMeth.iml" filepath="$PROJECT_DIR$/ProgMeth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab1_basic/lab1_basic.iml" filepath="$PROJECT_DIR$/lab1_basic/lab1_basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab2_inheritance/lab2_inheritance.iml" filepath="$PROJECT_DIR$/lab2_inheritance/lab2_inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab3_abstract/lab3_abstract.iml" filepath="$PROJECT_DIR$/lab3_abstract/lab3_abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_interface/lab4_interface.iml" filepath="$PROJECT_DIR$/lab4_interface/lab4_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5_gui/lab5_gui.iml" filepath="$PROJECT_DIR$/lab5_gui/lab5_gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab6_thread/lab6_thread.iml" filepath="$PROJECT_DIR$/lab6_thread/lab6_thread.iml" />
+    </modules>
+  </component>
+</project>

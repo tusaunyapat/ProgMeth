@@ -1,0 +1,55 @@
+@startuml
+class pane.NavigationPane {
+- ArrayList<PageButton> pageButtons
+- int currentPage
++ <<Create>> NavigationPane()
++ void addPage()
++ int getCurrentPage()
++ void setCurrentPage(int)
+}
+class pane.RootPane {
+- {static} NavigationPane navigationPane
+- {static} DisplayPane displayPane
+- {static} InputPane inputPane
++ <<Create>> RootPane()
++ {static} NavigationPane getNavigationPane()
++ {static} DisplayPane getDisplayPane()
++ {static} InputPane getInputPane()
+}
+class pane.InputPane {
++ <<Create>> InputPane()
+}
+class pane.DisplayPane {
+- ArrayList<ArrayList<TodoItem>> todoLists
++ <<Create>> DisplayPane()
++ void addTodoList()
++ void setActiveTodoList(int)
++ void addTodoItem(TodoItem)
++ void removeTodoItem(TodoItem)
+}
+class component.PageButton {
+- Circle circle
++ <<Create>> PageButton(int)
++ void setActive(boolean)
+}
+class application.Main {
++ void start(Stage)
++ {static} void main(String[])
+}
+class component.TodoItem {
++ <<Create>> TodoItem(String)
+}
+class component.CreatePageButton {
++ <<Create>> CreatePageButton()
+}
+
+
+javafx.scene.layout.VBox <|-- pane.NavigationPane
+javafx.scene.layout.BorderPane <|-- pane.RootPane
+javafx.scene.layout.HBox <|-- pane.InputPane
+javafx.scene.layout.VBox <|-- pane.DisplayPane
+javafx.scene.layout.StackPane <|-- component.PageButton
+javafx.application.Application <|-- application.Main
+javafx.scene.layout.HBox <|-- component.TodoItem
+javafx.scene.layout.StackPane <|-- component.CreatePageButton
+@enduml

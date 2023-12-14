@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Lab6_2110215_2023_1_6530428621_Aunyapat:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lab6_2110215_2023_1_6530428621_Aunyapat_jar</output-path>
+    <root id="archive" name="Lab6_2110215_2023_1_6530428621_Aunyapat.jar">
+      <element id="module-output" name="Lab6_2110215_2023_1_6530428621_Aunyapat" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/javafx-sdk-21.0.1/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src" />
+      <element id="dir-copy" path="$PROJECT_DIR$/res" />
+    </root>
+  </artifact>
+</component>

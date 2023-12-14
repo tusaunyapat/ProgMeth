@@ -1,0 +1,65 @@
+@startuml
+class logic.Inventory {
+- String playerName
+- int money
+- ArrayList<ItemCounter> items
++ <<Create>> Inventory(String)
++ <<Create>> Inventory(String,int)
++ <<Create>> Inventory(String,int,ArrayList<ItemCounter>)
++ String toString()
++ boolean existsInInventory(Item)
++ void addItem(Item,int)
++ void removeItem(Item,int)
++ void setMoney(int)
++ int getMoney()
++ String getPlayerName()
++ void setPlayerName(String)
++ ArrayList<ItemCounter> getItems()
++ void setItems(ArrayList<ItemCounter>)
+}
+class logic.ItemUtil {
++ {static} Scanner sc
++ {static} boolean itemNameIsExist(Market,String)
++ {static} boolean hasEnoughMoneytoBuy(Inventory,Item,int)
++ {static} ArrayList<Item> getItemFromFile(String)
++ {static} void playerSellplayer(Inventory,Inventory,Item,int)
++ {static} void playerSellPlayerConfirmed(Inventory,Inventory,Item,int)
++ {static} void playerSellMarket(Inventory,Item,int)
++ {static} void playerSellMarketConfirmed(Inventory,Item,int)
++ {static} void playerBuyMarket(Inventory,Item,int)
++ {static} void playerBuyMarketConfirmed(Inventory,Item,int)
+}
+class logic.ItemCounter {
+- Item item
+- int count
++ <<Create>> ItemCounter(Item)
++ <<Create>> ItemCounter(Item,int)
++ String toString()
++ Item getItem()
++ void setItem(Item)
++ int getCount()
++ void setCount(int)
+}
+class logic.Market {
+~ ArrayList<Item> allItems
++ <<Create>> Market()
++ <<Create>> Market(ArrayList<Item>)
++ String toString()
++ boolean ExistingItem(Item)
++ void addAllItems(ArrayList<Item>)
++ ArrayList<Item> getAllItems()
++ void setAllItems(ArrayList<Item>)
+}
+class logic.Item {
+- String itemName
+- int price
++ <<Create>> Item(String)
++ <<Create>> Item(String,int)
++ boolean equals(Item)
++ String toString()
++ String getItemName()
++ void setItemName(String)
++ int getPrice()
++ void setPrice(int)
+}
+@enduml

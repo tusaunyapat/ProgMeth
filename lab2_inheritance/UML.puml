@@ -1,0 +1,43 @@
+@startuml
+class logic.unit.Sorcerer {
++ <<Create>> Sorcerer(String)
++ <<Create>> Sorcerer(String,int,int)
++ void lowerPower(BaseCompetitor,int)
++ void attack(BaseCompetitor)
+}
+class logic.unit.BaseCompetitor {
+- String name
+- int power
+- int hp
++ <<Create>> BaseCompetitor(String)
++ <<Create>> BaseCompetitor(String,int,int)
++ void attack(BaseCompetitor)
++ String getType()
++ void setName(String)
++ void setHp(int)
++ void setPower(int)
++ String getName()
++ int getHp()
++ int getPower()
+}
+class logic.unit.Tiger {
++ <<Create>> Tiger(String)
++ <<Create>> Tiger(String,int,int)
++ void train(int)
++ void attack(BaseCompetitor)
+}
+class logic.unit.ToughMan {
+- int maxHp
++ <<Create>> ToughMan(String)
++ <<Create>> ToughMan(String,int,int)
++ void heal(int)
++ void attack(BaseCompetitor)
++ void setMaxHp(int)
++ int getMaxHp()
+}
+
+
+logic.unit.BaseCompetitor <|-- logic.unit.Sorcerer
+logic.unit.BaseCompetitor <|-- logic.unit.Tiger
+logic.unit.BaseCompetitor <|-- logic.unit.ToughMan
+@enduml
